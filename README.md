@@ -1,4 +1,4 @@
-# SwaggerCheck
+# Swagger Comparison Tool
 
 A tool to check and validate Swagger/OpenAPI specifications for compatibility between versions. This tool supports migration scenarios described in the [TypeSpec Azure documentation](https://azure.github.io/typespec-azure/docs/migrate-swagger/01-get-started/).
 

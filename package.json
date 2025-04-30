@@ -1,10 +1,26 @@
 {
-  "name": "@autorest/swagger-compare",
+  "name": "@typespec-migration/swagger-compare",
   "version": "0.0.1",
   "description": "A tool to check and validate Swagger/OpenAPI specifications",
+  "keywords": [
+    "swagger",
+    "openapi",
+    "validation",
+    "typescript"
+  ],
+  "homepage": "https://github.com/pshao25/swagger-compare#readme",
+  "bugs": {
+    "url": "https://github.com/pshao25/swagger-compare/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pshao25/swagger-compare.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "bin": {
     "swagger-check": "dist/index.js"
   },
@@ -16,14 +32,12 @@
     "lint": "eslint . --ext .ts",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [
-    "swagger",
-    "openapi",
-    "validation",
-    "typescript"
-  ],
-  "author": "",
-  "license": "MIT",
+  "dependencies": {
+    "@azure-tools/typespec-autorest": ">=0.44.0 <1.0.0",
+    "fs": "^0.0.1-security",
+    "json-diff": "^1.0.6",
+    "yargs": "^17.7.2"
+  },
   "devDependencies": {
     "@types/jest": "^29.4.0",
     "@types/json-diff": "^1.0.3",
@@ -36,11 +50,5 @@
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "@azure-tools/typespec-autorest": ">=0.44.0 <1.0.0",
-    "fs": "^0.0.1-security",
-    "json-diff": "^1.0.6",
-    "yargs": "^17.7.2"
   }
 }
